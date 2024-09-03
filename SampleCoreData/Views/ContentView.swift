@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                Text("\(Int(totalCaloriesToday())) KCal (Today)")
+                Text("\(Int(totalCaloriesToday())) kCal (Today)")
                     .foregroundColor(.gray)
                     .padding([.horizontal])
                 List {
