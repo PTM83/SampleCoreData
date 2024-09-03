@@ -11,6 +11,13 @@
 		026CD6052C86D96D0023ED1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CD6042C86D96D0023ED1B /* ContentView.swift */; };
 		026CD6072C86D9720023ED1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026CD6062C86D9720023ED1B /* Assets.xcassets */; };
 		026CD60A2C86D9720023ED1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026CD6092C86D9720023ED1B /* Preview Assets.xcassets */; };
+		026CD6152C86D9D10023ED1B /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CD6142C86D9D10023ED1B /* AddFoodView.swift */; };
+		026CD6172C86D9ED0023ED1B /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CD6162C86D9ED0023ED1B /* EditFoodView.swift */; };
+		026CD6192C86DA060023ED1B /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CD6182C86DA060023ED1B /* DataController.swift */; };
+		026CD61F2C86DD9A0023ED1B /* FoodModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 026CD61D2C86DD9A0023ED1B /* FoodModel.xcdatamodeld */; };
+		026CD6212C86E1430023ED1B /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CD6202C86E1430023ED1B /* TimeFormatting.swift */; };
+		026CD6282C8755260023ED1B /* Food+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CD6262C8755260023ED1B /* Food+CoreDataClass.swift */; };
+		026CD6292C8755260023ED1B /* Food+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026CD6272C8755260023ED1B /* Food+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		026CD6042C86D96D0023ED1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		026CD6062C86D9720023ED1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		026CD6092C86D9720023ED1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		026CD6142C86D9D10023ED1B /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		026CD6162C86D9ED0023ED1B /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
+		026CD6182C86DA060023ED1B /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		026CD61E2C86DD9A0023ED1B /* FoodModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodModel.xcdatamodel; sourceTree = "<group>"; };
+		026CD6202C86E1430023ED1B /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
+		026CD6262C8755260023ED1B /* Food+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food+CoreDataClass.swift"; sourceTree = "<group>"; };
+		026CD6272C8755260023ED1B /* Food+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Food+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,10 @@
 		026CD6012C86D96D0023ED1B /* SampleCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				026CD6112C86D9A20023ED1B /* DataModel */,
+				026CD6132C86D9B60023ED1B /* Helpers */,
+				026CD6122C86D9AB0023ED1B /* Views */,
 				026CD6022C86D96D0023ED1B /* SampleCoreDataApp.swift */,
-				026CD6042C86D96D0023ED1B /* ContentView.swift */,
 				026CD6062C86D9720023ED1B /* Assets.xcassets */,
 				026CD6082C86D9720023ED1B /* Preview Content */,
 			);
@@ -65,6 +81,35 @@
 				026CD6092C86D9720023ED1B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		026CD6112C86D9A20023ED1B /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				026CD61D2C86DD9A0023ED1B /* FoodModel.xcdatamodeld */,
+				026CD6262C8755260023ED1B /* Food+CoreDataClass.swift */,
+				026CD6272C8755260023ED1B /* Food+CoreDataProperties.swift */,
+				026CD6182C86DA060023ED1B /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		026CD6122C86D9AB0023ED1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				026CD6142C86D9D10023ED1B /* AddFoodView.swift */,
+				026CD6042C86D96D0023ED1B /* ContentView.swift */,
+				026CD6162C86D9ED0023ED1B /* EditFoodView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		026CD6132C86D9B60023ED1B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				026CD6202C86E1430023ED1B /* TimeFormatting.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026CD6192C86DA060023ED1B /* DataController.swift in Sources */,
+				026CD6212C86E1430023ED1B /* TimeFormatting.swift in Sources */,
+				026CD6282C8755260023ED1B /* Food+CoreDataClass.swift in Sources */,
+				026CD6292C8755260023ED1B /* Food+CoreDataProperties.swift in Sources */,
 				026CD6052C86D96D0023ED1B /* ContentView.swift in Sources */,
 				026CD6032C86D96D0023ED1B /* SampleCoreDataApp.swift in Sources */,
+				026CD6172C86D9ED0023ED1B /* EditFoodView.swift in Sources */,
+				026CD6152C86D9D10023ED1B /* AddFoodView.swift in Sources */,
+				026CD61F2C86DD9A0023ED1B /* FoodModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +396,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		026CD61D2C86DD9A0023ED1B /* FoodModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				026CD61E2C86DD9A0023ED1B /* FoodModel.xcdatamodel */,
+			);
+			currentVersion = 026CD61E2C86DD9A0023ED1B /* FoodModel.xcdatamodel */;
+			name = FoodModel.xcdatamodeld;
+			path = /Users/pabs/Desktop/SwiftFiles/SampleCoreData/SampleCoreData/DataModel/FoodModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 026CD5F72C86D96D0023ED1B /* Project object */;
 }
